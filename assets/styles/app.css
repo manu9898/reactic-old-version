@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* taille par défaut de la translation du doubleR*/
+.transformDoubleR{
+    transform: translate(-50%, -100%);
+}
+/* taille par défaut de la translation du doubleR*/
+
+/* format ipad translation doubleR */
+.transformDoubleRFormatIpad{
+    transform: translate(-50%, -120%);
+}
+/* format ipad translation doubleR */

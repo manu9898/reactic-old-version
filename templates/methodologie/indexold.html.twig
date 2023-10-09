@@ -1,0 +1,570 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MethodologieController!{% endblock %}
+
+{% block body %}
+
+    <main>
+        <section class="h-screen bg-primary relative">
+
+            <!-- la colonne prends 100% de la hauteur de l'écran -->
+            <div class="flex flex-col h-full">
+
+                <!-- logo -->
+                <div class="flex-row h-14 flex-2">
+                    <a href="/" class="">
+                        {{ source("logo.svg") }}
+                    </a>
+                </div>
+                <!-- fin du logo -->
+
+                <!-- div comprenant le menu et la séparation horizontale (couleur teal) -->
+                    <div class="flex-2"></div>
+
+                <div class="flex flex-1 items-center">
+                    <!-- section principal -->
+                    <div class="flex">
+                        <!-- ligne principal -->
+                        <div class="w-screen flex flex-row">
+                            <!-- premiere colonne dans la ligne -->
+                            <div class="bg-white flex flex-col basis-1/2 ">
+                                <!-- ligne dans la première colonne -->
+                                <div class="flex flex-row">
+                                    <!-- la première div sert de marge -->
+                                    <div class="basis-3/12 "></div>
+                                    <div class="basis-9/12">
+                                        <!-- liste à puce en colonne -->
+                                        <p class="text-5xl text-white font-poppins font-light pb-6"><span class="text-teal-900">Notre méthodologie</span> Votre succès</p>
+                                        <p class="text-3xl text-white font-poppins font-light">Comment nous créons pour vous une application web à la hauteur de vos exigences</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- deuxième colonne dans la ligne -->
+                            <div class="basis-1/2 text-center">
+                                <!-- colonne dans la ligne-->
+                                <div class="flex flex-col basis-1/2 ">
+                                    <div class="flex flex-row">
+                                        <div class="basis-9/12 ">
+                                            {{ source('double_r.svg') }}
+                                        </div>
+
+                                        <!-- la dernière ligne sert de marge -->
+                                        <div class="basis-3/12 "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fin de section principal -->
+                </div>
+                <!-- bouton -->
+                <div class="flex-2 absolute right-6 bottom-6">
+                    <button class="text-teal-900 hover:bg-teal-900 hover:text-primary lg:border-2 sm:border-[3px] borderColorTeal p-2.5 sm:rounded-3xl lg:rounded-3xl">contactez-nous<span>&rarr;</span></button>
+                </div>
+                <!-- bouton -->
+
+            </div>
+            <div class="relative"></div>
+
+        </section>
+        <!-- fin de section découverte et recueil des données-->
+
+        <!-- ---------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- section découverte et recueil des données, elle prend la hauteur de l'écran -->
+        <section class="h-screen bg-primary relative">
+
+            <!-- la colonne prends 100% de la hauteur de l'écran -->
+            <div class="flex flex-col h-full">
+
+                <!-- logo -->
+                <div class="flex-row h-14 flex-2">
+                    <a href="/" class="">
+                        {{ source("logo.svg") }}
+                    </a>
+                </div>
+                <!-- fin du logo -->
+
+                <!-- div comprenant le menu et la séparation horizontale (couleur teal) -->
+                <div class= "-ml-6 -mr-6">
+                    <div class="flex w-screen h-7 bg-teal-900 flex-none"></div>
+                    <div class="bg-green-500 flex-3 h-20"><div class="bg-tertiary flex flex-row flex-wrap items-center font-poppins font-light text-secondary h-20">
+                            <div class="flex-auto text-center"></div>
+                            <div class=" flex-auto text-center">1 DECOUVERTE ET RECUEIL DES DONNEES</div>
+                            <div class=" flex-auto text-center ">2 STRATEGIE & PLANNING</div>
+                            <div class=" flex-auto text-center">3 MAQUETTES & DESIGN</div>
+                            <div class=" flex-auto text-center">4 CONSTRUCTION, TESTS & DEPLOIEMENTS</div>
+                            <div class=" flex-auto text-center">5 MESURES & OPTIMISATION</div>
+                            <div class="flex-auto text-center"></div>
+                        </div>
+                    </div>
+                    <!-- fin de menu -->
+
+                </div>
+                <div class="flex flex-1 items-center">
+                    <!-- section principal -->
+                        <!-- ligne principal -->
+                        <div class="w-screen flex flex-row ">
+                            <!-- premiere colonne dans la ligne -->
+                            <div class="flex flex-col basis-1/2 ">
+                                <!-- ligne dans la première colonne -->
+                                <div class="flex flex-row">
+                                    <!-- la première div sert de marge -->
+                                    <div class="basis-3/12 "></div>
+                                    <div class="basis-9/12 py-28">
+                                        <!-- liste à puce en colonne -->
+                                        <div class="flex flex-col">
+                                            <p class="text-5xl font-light font-poppins text-white pb-6">Découverte & Recueil Des Données</p>
+                                            <!-- séparateur couleur teal -->
+                                            <div class="w-72 bg-teal-900 h-px "></div>
+                                            <!-- fin de séparateur couleur teal -->
+
+                                            <ul class="list-disc pt-16">
+                                                <li class="font-poppins font-poppins text-3xl text-white">Micro-audits</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Interview « guérilla »</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Analyses comparatives</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Dressage de portraits type</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Modélisation des phases d’achat</li>
+                                            </ul>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- deuxième colonne dans la ligne -->
+                            <div class="basis-1/2 text-center">
+                                <!-- colonne dans la ligne-->
+                                <div class="flex flex-col basis-1/2 ">
+                                    <div class="flex flex-row">
+                                        <div class="basis-9/12 ">
+                                            {{ source('methodologyPicture.svg') }}
+                                        </div>
+
+                                        <!-- la dernière ligne sert de marge -->
+                                        <div class="basis-3/12 ">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    <!-- fin de section principal -->
+                </div>
+
+
+
+                <!-- bouton -->
+                <div class="flex-2 absolute right-6 bottom-6">
+                    <button class="text-teal-900 hover:bg-teal-900 hover:text-primary lg:border-2 sm:border-[3px] borderColorTeal p-2.5 sm:rounded-3xl lg:rounded-3xl">contactez-nous<span>&rarr;</span></button>
+                </div>
+                <!-- bouton -->
+
+            </div>
+            <!-- nombre 1 -->
+            <div class="absolute bottom-36 left-1/3">
+                {{ source('Vector.svg') }}
+            </div>
+            <!-- fin nombre 1 -->
+        </section>
+        <!-- fin de section découverte et recueil des données-->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------  --><!-- ---------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- section 2 STRATEGIE & PLANNING, elle prend la hauteur de l'écran -->
+        <section class="h-screen bg-primary relative">
+
+            <!-- la colonne prends 100% de la hauteur de l'écran -->
+            <div class="flex flex-col h-full">
+
+                <!-- logo -->
+                <div class="flex-row h-14 flex-2">
+                    <a href="/" class="">
+                        {{ source("logo.svg") }}
+                    </a>
+                </div>
+                <!-- fin du logo -->
+
+                <!-- div comprenant le menu et la séparation horizontale (couleur teal) -->
+                <div class= "-ml-6 -mr-6 h-[128px]">
+                    <div class="flex-row w-screen h-7 bg-teal-900 flex-2"></div>
+                    <div class="bg-green-500 flex-3 h-20"><div class="bg-tertiary flex flex-row flex-wrap items-center font-poppins font-light text-secondary h-20">
+                            <div class="flex-auto text-center"></div>
+                            <div class=" flex-auto text-center">1 DECOUVERTE ET RECUEIL DES DONNEES</div>
+                            <div class=" flex-auto text-center ">2 STRATEGIE & PLANNING</div>
+                            <div class=" flex-auto text-center">3 MAQUETTES & DESIGN</div>
+                            <div class=" flex-auto text-center">4 CONSTRUCTION, TESTS & DEPLOIEMENTS</div>
+                            <div class=" flex-auto text-center">5 MESURES & OPTIMISATION</div>
+                            <div class="flex-auto text-center"></div>
+                        </div>
+                    </div>
+                    <!-- fin de menu -->
+
+                </div>
+                <div class="flex flex-1 items-center">
+                    <!-- section principal -->
+                    <div class="flex   ">
+                        <!-- ligne principal -->
+                        <div class="w-screen flex flex-row ">
+                            <!-- premiere colonne dans la ligne -->
+                            <div class="flex flex-col basis-1/2 ">
+                                <!-- ligne dans la première colonne -->
+                                <div class="flex flex-row">
+                                    <!-- la première div sert de marge -->
+                                    <div class="basis-3/12 "></div>
+                                    <div class="basis-9/12 py-28">
+                                        <!-- liste à puce en colonne -->
+                                        <div class="flex flex-col">
+                                            <p class="text-5xl font-light font-poppins text-white pb-6">Découverte & Recueil Des Données</p>
+                                            <!-- séparateur couleur teal -->
+                                            <div class="w-72 bg-teal-900 h-px "></div>
+                                            <!-- fin de séparateur couleur teal -->
+
+                                            <ul class="list-disc pt-16">
+                                                <li class="font-poppins font-poppins text-3xl text-white">Micro-audits</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Interview « guérilla »</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Analyses comparatives</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Dressage de portraits type</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Modélisation des phases d’achat</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- deuxième colonne dans la ligne -->
+                            <div class="basis-1/2 text-center">
+                                <!-- colonne dans la ligne-->
+                                <div class="flex flex-col basis-1/2 ">
+                                    <div class="flex flex-row">
+                                        <div class="basis-9/12 ">
+                                            {{ source('methodologyPicture.svg') }}
+                                        </div>
+
+                                        <!-- la dernière ligne sert de marge -->
+                                        <div class="basis-3/12 "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fin de section principal -->
+                </div>
+                <!-- bouton -->
+                <div class="flex-2 absolute right-6 bottom-6">
+                    <button class="text-teal-900 hover:bg-teal-900 hover:text-primary lg:border-2 sm:border-[3px] borderColorTeal p-2.5 sm:rounded-3xl lg:rounded-3xl">contactez-nous<span>&rarr;</span></button>
+                </div>
+                <!-- bouton -->
+
+            </div>
+            <!-- nombre 2 -->
+            <div class="absolute bottom-36 left-1/3">
+                {{ source('Vector2.svg') }}
+            </div>
+            <!-- fin nombre 2 -->
+        </section>
+        <!-- fin de section 2 STRATEGIE & PLANNING -->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------  --><!-- ---------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- section MAQUETTES & DESIGN, elle prend la hauteur de l'écran -->
+        <section class="h-screen bg-primary relative">
+
+            <!-- la colonne prends 100% de la hauteur de l'écran -->
+            <div class="flex flex-col h-full">
+
+                <!-- logo -->
+                <div class="flex-row h-14 flex-2">
+                    <a href="/" class="">
+                        {{ source("logo.svg") }}
+                    </a>
+                </div>
+                <!-- fin du logo -->
+
+                <!-- div comprenant le menu et la séparation horizontale (couleur teal) -->
+                <div class= "-ml-6 -mr-6 h-[128px]">
+                    <div class="flex-row w-screen h-7 bg-teal-900 flex-2"></div>
+                    <div class="bg-green-500 flex-3 h-20"><div class="bg-tertiary flex flex-row flex-wrap items-center font-poppins font-light text-secondary h-20">
+                            <div class="flex-auto text-center"></div>
+                            <div class=" flex-auto text-center">1 DECOUVERTE ET RECUEIL DES DONNEES</div>
+                            <div class=" flex-auto text-center ">2 STRATEGIE & PLANNING</div>
+                            <div class=" flex-auto text-center">3 MAQUETTES & DESIGN</div>
+                            <div class=" flex-auto text-center">4 CONSTRUCTION, TESTS & DEPLOIEMENTS</div>
+                            <div class=" flex-auto text-center">5 MESURES & OPTIMISATION</div>
+                            <div class="flex-auto text-center"></div>
+                        </div>
+                    </div>
+                    <!-- fin de menu -->
+
+                </div>
+                <div class="flex flex-1 items-center">
+                    <!-- section principal -->
+                    <div class="flex   ">
+                        <!-- ligne principal -->
+                        <div class="w-screen flex flex-row ">
+                            <!-- premiere colonne dans la ligne -->
+                            <div class="flex flex-col basis-1/2 ">
+                                <!-- ligne dans la première colonne -->
+                                <div class="flex flex-row">
+                                    <!-- la première div sert de marge -->
+                                    <div class="basis-3/12 "></div>
+                                    <div class="basis-9/12 py-28">
+                                        <!-- liste à puce en colonne -->
+                                        <div class="flex flex-col">
+                                            <p class="text-5xl font-light font-poppins text-white pb-6">Maquettes & design </p>
+                                            <!-- séparateur couleur teal -->
+                                            <div class="w-72 bg-teal-900 h-px "></div>
+                                            <!-- fin de séparateur couleur teal -->
+
+                                            <ul class="list-disc pt-16">
+                                                <li class="font-poppins font-poppins text-3xl text-white">Architecture dce contenus</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Wireframe - zoning</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Maquette haute fidélité</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Navigation</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Contenus - proposition de valeur </li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Insipiration </li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Objectifs émotionnels et logiques</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- deuxième colonne dans la ligne -->
+                            <div class="basis-1/2 text-center">
+                                <!-- colonne dans la ligne-->
+                                <div class="flex flex-col basis-1/2 ">
+                                    <div class="flex flex-row">
+                                        <div class="basis-9/12 ">
+                                            {{ source('methodologyPicture.svg') }}
+                                        </div>
+
+                                        <!-- la dernière ligne sert de marge -->
+                                        <div class="basis-3/12 "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fin de section principal -->
+                </div>
+                <!-- bouton -->
+                <div class="flex-2 absolute right-6 bottom-6">
+                    <button class="text-teal-900 hover:bg-teal-900 hover:text-primary lg:border-2 sm:border-[3px] borderColorTeal p-2.5 sm:rounded-3xl lg:rounded-3xl">contactez-nous<span>&rarr;</span></button>
+                </div>
+                <!-- bouton -->
+
+            </div>
+            <!-- nombre 3 -->
+            <div class="absolute bottom-36 left-1/3">
+                {{ source('Vector3.svg') }}
+            </div>
+            <!-- fin nombre 3 -->
+        </section>
+        <!-- fin de section MAQUETTES & DESIGN-->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------  --><!-- ---------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- section CONSTRUCTION, TESTS & DEPLOIEMENTS, elle prend la hauteur de l'écran -->
+        <section class="h-screen bg-primary relative">
+
+            <!-- la colonne prends 100% de la hauteur de l'écran -->
+            <div class="flex flex-col h-full">
+
+                <!-- logo -->
+                <div class="flex-row h-14 flex-2">
+                    <a href="/" class="">
+                        {{ source("logo.svg") }}
+                    </a>
+                </div>
+                <!-- fin du logo -->
+
+                <!-- div comprenant le menu et la séparation horizontale (couleur teal) -->
+                <div class= "-ml-6 -mr-6 h-[128px]">
+                    <div class="flex-row w-screen h-7 bg-teal-900 flex-2"></div>
+                    <div class="bg-green-500 flex-3 h-20"><div class="bg-tertiary flex flex-row flex-wrap items-center font-poppins font-light text-secondary h-20">
+                            <div class="flex-auto text-center"></div>
+                            <div class=" flex-auto text-center">1 DECOUVERTE ET RECUEIL DES DONNEES</div>
+                            <div class=" flex-auto text-center ">2 STRATEGIE & PLANNING</div>
+                            <div class=" flex-auto text-center">3 MAQUETTES & DESIGN</div>
+                            <div class=" flex-auto text-center">4 CONSTRUCTION, TESTS & DEPLOIEMENTS</div>
+                            <div class=" flex-auto text-center">5 MESURES & OPTIMISATION</div>
+                            <div class="flex-auto text-center"></div>
+                        </div>
+                    </div>
+                    <!-- fin de menu -->
+
+                </div>
+                <div class="flex flex-1 items-center ">
+                    <!-- section principal -->
+                    <div class="flex   ">
+                        <!-- ligne principal -->
+                        <div class="w-screen flex flex-row ">
+                            <!-- premiere colonne dans la ligne -->
+                            <div class="flex flex-col basis-1/2 ">
+                                <!-- ligne dans la première colonne -->
+                                <div class="flex flex-row">
+                                    <!-- la première div sert de marge -->
+                                    <div class="basis-3/12 "></div>
+                                    <div class="basis-9/12 py-28">
+                                        <!-- liste à puce en colonne -->
+                                        <div class="flex flex-col">
+                                            <p class="text-5xl font-light font-poppins text-white pb-6">Construction, tests & déploiement  </p>
+
+                                            <!-- séparateur couleur teal -->
+                                            <div class="w-72 bg-teal-900 h-px "></div>
+                                            <!-- fin de séparateur couleur teal -->
+
+                                            <ul class="list-disc pt-16">
+
+                                                <li class="font-poppins font-poppins text-3xl text-white">Intégration</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Conception et création de base de données</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Sécurité</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Configurations</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Développement</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Mise en ligne</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- deuxième colonne dans la ligne -->
+                            <div class="basis-1/2 text-center">
+                                <!-- colonne dans la ligne-->
+                                <div class="flex flex-col basis-1/2 ">
+                                    <div class="flex flex-row">
+                                        <div class="basis-9/12 ">
+                                            {{ source('methodologyPicture.svg') }}
+                                        </div>
+
+                                        <!-- la dernière ligne sert de marge -->
+                                        <div class="basis-3/12 "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fin de section principal -->
+                </div>
+                <!-- bouton -->
+                <div class="flex-2 absolute right-6 bottom-6">
+                    <button class="text-teal-900 hover:bg-teal-900 hover:text-primary lg:border-2 sm:border-[3px] borderColorTeal p-2.5 sm:rounded-3xl lg:rounded-3xl">contactez-nous<span>&rarr;</span></button>
+                </div>
+                <!-- bouton -->
+
+            </div>
+            <!-- nombre 4 -->
+            <div class="absolute bottom-36 left-1/3  ">
+                {{ source('Vector4.svg') }}
+            </div>
+            <!-- fin nombre 4 -->
+        </section>
+        <!-- fin de section CONSTRUCTION, TESTS & DEPLOIEMENTS-->
+
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------  --><!-- ---------------------------------------------------------------------------------------------------------------------------------------------  -->
+        <!-- section MESURES & OPTIMISATION -->
+        <section class="h-screen bg-primary relative">
+
+            <!-- la colonne prends 100% de la hauteur de l'écran -->
+            <div class="flex flex-col h-full">
+
+                <!-- logo -->
+                <div class="flex-row h-14 flex-2">
+                    <a href="/" class="">
+                        {{ source("logo.svg") }}
+                    </a>
+                </div>
+                <!-- fin du logo -->
+
+                <!-- div comprenant le menu et la séparation horizontale (couleur teal) -->
+                <div class= "-ml-6 -mr-6 ">
+                    <div class="flex-row w-screen h-7 bg-teal-900 flex-2"></div>
+                    <div class="bg-green-500 flex-3 h-20"><div class="bg-tertiary flex flex-row flex-wrap items-center font-poppins font-light text-secondary h-20">
+                            <div class="flex-auto text-center"></div>
+                            <div class=" flex-auto text-center">1 DECOUVERTE ET RECUEIL DES DONNEES</div>
+                            <div class=" flex-auto text-center ">2 STRATEGIE & PLANNING</div>
+                            <div class=" flex-auto text-center">3 MAQUETTES & DESIGN</div>
+                            <div class=" flex-auto text-center">4 CONSTRUCTION, TESTS & DEPLOIEMENTS</div>
+                            <div class=" flex-auto text-center">5 MESURES & OPTIMISATION</div>
+                            <div class="flex-auto text-center"></div>
+                        </div>
+                    </div>
+                    <!-- fin de menu -->
+
+                </div>
+                <div class="flex flex-1 items-center">
+                    <!-- section principal -->
+                    <div class="flex   ">
+                        <!-- ligne principal -->
+                        <div class="w-screen flex flex-row ">
+                            <!-- premiere colonne dans la ligne -->
+                            <div class="flex flex-col basis-1/2 ">
+                                <!-- ligne dans la première colonne -->
+                                <div class="flex flex-row">
+                                    <!-- la première div sert de marge -->
+                                    <div class="basis-3/12 "></div>
+                                    <div class="basis-9/12 py-28">
+                                        <!-- liste à puce en colonne -->
+                                        <div class="flex flex-col">
+                                            <p class="text-5xl font-light font-poppins text-white pb-6">Mesures & optimisations</p>
+                                            <!-- Séparateur couleur teal -->
+                                            <div class="w-72 bg-teal-900 h-px "></div>
+                                            <!-- fin de séparateur couleur teal -->
+                                            <ul class="list-disc pt-16">
+                                                <li class="font-poppins font-poppins text-3xl text-white">Analyse quantitative</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Mesures taux de clics</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Mesures ROIA</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Mesures expérience utilisateur</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Création d’Ahypothèses</li>
+                                                <li class="font-poppins font-poppins text-3xl text-white">Améliorations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- deuxième colonne dans la ligne -->
+                            <div class="basis-1/2 text-center">
+                                <!-- colonne dans la ligne-->
+                                <div class="flex flex-col basis-1/2 ">
+                                    <div class="flex flex-row">
+                                        <div class="basis-9/12 ">
+                                            {{ source('methodologyPicture.svg') }}
+                                        </div>
+
+                                        <!-- la dernière ligne sert de marge -->
+                                        <div class="basis-3/12 "></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- fin de section principal -->
+                </div>
+                <!-- bouton -->
+                <div class="flex-2 absolute right-6 bottom-6">
+                    <button class="text-teal-900 hover:bg-teal-900 hover:text-primary lg:border-2 sm:border-[3px] borderColorTeal p-2.5 sm:rounded-3xl lg:rounded-3xl">contactez-nous<span>&rarr;</span></button>
+                </div>
+                <!-- bouton -->
+
+            </div>
+            <!-- nombre 5 -->
+            <div class="absolute bottom-36 left-1/3">
+                {{ source('5.svg') }}
+            </div>
+            <!-- fin nombre 5 -->
+        </section>
+        <!-- MESURES & OPTIMISATION-->
+        <div class="flex flex-row">
+                <div class="basis-1/4">ddd</div>
+                <p class="text-white font-light font-poppins text-3xl basis-3/4">
+                    En savoir plus sur la phase découverte et recueil des données
+                </p>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------------------------------  -->
+    </main>
+
+
+
+{% endblock%}
