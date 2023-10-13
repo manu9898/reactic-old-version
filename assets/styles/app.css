@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 /* taille par défaut de la translation du doubleR*/
 .transformDoubleR{
     transform: translate(-50%, -100%);
