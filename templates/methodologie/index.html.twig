@@ -10,7 +10,8 @@
 {% block next_sections %}
 
     <main>
-        {% set m_title = 'Découverte & recueil des données' %}
+
+        {% set m_title = "Collecte d'informations" | raw %}
         {% set m_current_item = 1 %}
         {% set m_image_path = '/methodologie-oriente-croissance-etape-31.svg' %}
         {% set m_number = '/pictures/Vector.svg' %}
@@ -19,7 +20,7 @@
 
 
         {% set m_current_item = 2 %}
-        {% set m_title = 'Découverte & recueil des données' %}
+        {% set m_title = 'Recueil des données' %}
         {% set m_number = '/pictures/Vector2.svg' %}
         {{ include('methodologie/process.html.twig') }}
 
@@ -35,14 +36,17 @@
 
 
         {% set m_current_item = 4 %}
-        {% set m_title = 'Construction, tests & déploiement' %}
+        {% set m_title = 'Construction & déploiement' %}
         {% set m_number = '/pictures/Vector4.svg' %}
         {{ include('methodologie/process.html.twig') }}
 
 
 
         {% set m_current_item = 5 %}
-        {% set m_title = 'Mesures & optimisations ' %}
+        <div class="text-center">
+            {% set m_title = 'Mesures & optimisations ' %}
+        </div>
+
         {% set m_number = '/pictures/5.svg' %}
         {{ include('methodologie/process.html.twig') }}
     </main>
