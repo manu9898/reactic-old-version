@@ -4,248 +4,27 @@
 
 {% block body %}
     <!-- section 1 -->
-    <section class="min-h-screen flex flex-col">
-        <!-- division 1 -->
-        <div class="flex flex-row flex-none pt-12 pl-12 pr-12">
-            <div class="flex justify-between w-full items-center  flex-wrap">
-                <div class="">{{ source('logoReactic.svg') }}</div>
-                <div class="">
-                    <a href="/" class="text-teal-900 hover:bg-teal-900 hover:text-primary border-2 border-teal-400 p-2.5 rounded-3xl">Un projet ?</a>
-                </div>
-            </div>
-        </div>
-        <!-- fin de division 1 -->
 
-        <!-- division 2 -->
-        <div class="min-h-screen flex  justify-center items-center  ">
-            {{ source('pictures/cIrcleReactic.svg') }}
-        </div>
-
-        <div class="text-teal-900 absolute top-1/2 left-0 translate-x-20 transform -translate-y-1/2
-                2xl:absolute  2xl:text-white 2xl:text-2xl 2xl:top-1/2 2xl:left-1/2 2xl:-translate-y-72 2xl:-translate-x-40
-                xl:absolute xl:block  xl:text-white xl:text-2xl xl:top-1/2 xl:left-1/2 xl:-translate-y-72 xl:-translate-x-20
-                lg:absolute lg:block  lg:text-white lg:text-2xl lg:top-1/2 lg:left-1/2 lg:-translate-y-72 lg:-translate-x-20
-
-
-
-                ">L’ENTREPRISE</div>
-        <div class="text-teal-900 absolute top-1/2 left-1/2 -translate-x-20 translate-y-[450px]
-                2xl:absolute 2xl:block 2xl:text-white 2xl:text-2xl 2xl:top-1/2 2xl:left-0 2xl:translate-y-20 2xl:translate-x-80
-                xl:absolute xl:block xl:text-white xl:text-2xl xl:top-1/2 xl:left-0 xl:translate-y-20 xl:translate-x-40
-                lg:absolute lg:block lg:text-white lg:text-2xl lg:top-1/2 lg:left-0 lg:translate-y-20 lg:translate-x-10
-
-
-
-                ">LA TECHNOLOGIE</div>
-        <div class="text-teal-900 absolute top-1/2 left-1/2 translate-x-72 transform -translate-y-1/2
-                2xl:absolute 2xl:block 2xl:text-white 2xl:text-2xl 2xl:top-1/2 2xl:left-1/2 2xl:translate-x-72
-                xl:absolute xl:block xl:text-white xl:text-2xl xl:top-1/2 xl:left-1/2 xl:translate-x-72
-                lg:absolute lg:block lg:text-white lg:text-2xl lg:top-1/2 lg:left-1/2 lg:translate-x-72
-
-
-
-
-                ">L’AUDIENCE</div>
-        <!-- fin de division 2 -->
-        <!-- division 3 -->
-        <div class="flex flex-row  flex-none"></div>
-        <!-- fin de division 3 -->
-
-
-
-    </section>
-
+    {{ include("home/section1.html.twig") }}
     <!-- fin de la première section -->
 
     <!-- section 2 -->
 
-    <section class="-mr-12 -ml-12 min-h-screen  flex flex-col relative bg-no-repeat bg-center bg-gradient-to-t from-primary via-teal-900 to-primary ">
-
-        <div class="flex flex-row  flex-none"></div>
-        <div class="flex flex-row  flex-1 text-white justify-center items-center text-center flex-wrap w-full ">
-            <div class="
-            max-w-5xl  pr-12 pl-12 z-[1]
-            2xl:pr-0 2xl:pl-0 2xl:max-w-6xl
-            ">
-                <p class="text-2xl pb-48 font-bold opacity-100
-                2xl:text-5xl
-                xl:text-5xl
-                lg:text-3xl
-                md:text-3xl
-                sm:text-xl
-                ">La raison d’être d’un projet digital Participer<br>
-                    à la croissance de l’entreprise</p>
-
-                <p class="text-xl text-white font-bold leading-[3rem]
-                          2xl:text-3xl
-                          xl:text-3xl
-                          lg:text-2xl
-                          md:text-xl
-                          sm:text-xl
-                          ">On ne parvient pas à atteindre le succès en misant uniquement sur le nombre de fonctionnalités, le design le plus beau ou en ciblant toute son audience.
-                    Le succès s’obtient par la récolte, l’analyse et le traitement de données qui génèrent le plus d’impact pour l’entreprise et les utilisateurs.
-                    Ce qui repose sur une approche qui prend en compte trois aspects fondamentaux d’une stratégie orientée croissance.</p>
-            </div>
-
-
-        </div>
-<!--
-        <div class="absolute w-96 top-1/2 left-0 translate-x-10 -translate-y-40
-    2xl:w-[800px] 2xl:top-0 2xl:left-1/2  2xl:-translate-x-60 2xl:translate-y-10
-    xl:w-[1500px] xl:top-0 xl:left-0  xl:translate-x-[400px] xl:translate-y-28
-    lg:w-[1500px] lg:top-0 lg:left-0 lg:max-w-xl lg:translate-x-80 lg:translate-y-40
-    md:w-[1500px] md:top-0 md:left-0 md:max-w-md md:translate-x-48 md:translate-y-48
-    sm:w-[1500px] sm:top-0 sm:left-0 sm:max-w-md sm:translate-x-48 sm:translate-y-48
-    xs:w-[1500px] xs:top-0 xs:left-0 xs:max-w-md xs:translate-x-48 xs:translate-y-48
-    2xs:w-[1500px] 2xs:top-1/2 2xs:left-1/2 2xs:max-w-md 2xs:-translate-x-60 2xs:-translate-y-48
-
-    ">
-            {{ source('illustration-reactic-methodologie-oriente-croissance.svg') }}
-        </div>
-
-
--->
-
-        <div class="flex flex-row  flex-none"></div>
-
-
-</section>
+    {{ include("home/section2.html.twig") }}
+    <!-- fin de section 2 -->
 
 <!-- 3eme section -->
+    {{ include("home/section3.html.twig") }}
 
-<section class="bg-primary bg-no-repeat" style="background-image: url('/images/reactic-lettre-r-logo.svg'); background-size: 100% 100%">
-    <div class="pr-12 pl-12">
-        <div class="flex justify-between  ">
-            <div class="text-white pt-10">
-                <p class="text-2xl font-poppins font-bold">Alignement avec l’entreprise</p>
-                <div class="w-72 2xl:bg-teal-400 h-0.5 my-10"></div>
-                <p class="max-w-xl text-2xl pb-6  font-poppins font-bold">PRES-REQUIS D’UNE COLLABORATION
-                    A SUCCÈS</p>
-                <p class="text-base max-w-xl">Lorsqu’on s’imprègne de l’univers du chef d’entreprise, on comprend sa vision, son marché et ses objectifs. Le partenaire digital
-                    devient alors un membre de l’équipe qui discerne les enjeux et qui est à même d’aider l’entreprise à accomplir ses objectifs liés au numérique.</p>
-            </div>
-            <div class="w-96">{{ source('pictures/group61.svg') }}</div>
-        </div>
-        <div class="flex justify-around pt-20">
-            <div class="">{{ source('pictures/group62.svg') }}</div>
-            <div>
-                <p class="text-white text-2xl ">Compréhension de l’expérience utilisateur</p>
-                <div class="w-72 bg-teal-400 h-0.5 my-10"></div>
-                <p class="text-white text-2xl">CE QUE VOS CLIENTS VEULENT VRAIMENT</p>
-                <p class="2xl:text-base max-w-xl text-white my-10">Modéliser la psychologie de l’utilisateur est indispensable pour créer un site web ou une application. En concevant l’expérience globale, le concepteur base la
-                    création de l’interface sur des éléments concrets (et non sur des suppositions).
-                    Le but est que l’outil réponde à la fois aux attentes utilisateurs –utile– et aux objectifs de l’entreprise –rentable–.</p>
-            </div>
-
-        </div>
-        <div class="pt-20 flex justify-center text-teal-900">
-            <p class="text-center max-w-3xl">
-                « Pour que les utilisateurs aiment les logiciels, nous devons les créer à l’image d’une personne qu’on apprécie : respectueux, généreux et aidants. »
-                (Alan Cooper)
-            </p>
-
-        </div>
-        <div class="flex justify-between  pt-20">
-            <div>
-                <p class="text-white text-2xl max-w-xl">Création de solutions adaptées aux
-                    objectifs et ambitions du projet</p>
-                <div class="w-72 bg-teal-400 h-0.5 my-10"></div>
-            </div>
-            <div>
-                <div class="w-[500px]">{{ source('pictures/group63.svg') }}</div>
-            </div>
-        </div>
-
-
-
-
-    </div>
-
-
-
-
-</section>
-    <div class="flex justify-center py-20">
-        <div>{{ source('pictures/logos-technologies-utilisees-par-reactic-en-fonction-des-besoins-projet.svg') }}</div>
-
-    </div>
 <!-- fin de 3eme section -->
 <!-- section 4 -->
 
-<section class="min-h-screen -ml-12 -mr-12 " style="background-image: url('images/bgReactic.png'); background-size: cover; ">
-
-
-    <div class="flex flex-col  min-h-screen justify-around ">
-        <div class="text-white text-3xl font-bold font-poppins text-center">Notre philosophie de conception</div>
-        <div class="text-white flex justify-around w-full flex-wrap">
-            <div>{{ source('pictures/pointDeVue.svg') }}</div>
-            <div>{{ source('pictures/percentOfAction.svg') }}</div>
-            <div>{{ source('pictures/progress.svg') }}</div>
-        </div>
-        <div class="text-white  text-2xl text-left pl-20">Découvrez la méthodologie
-            utilisée<br> par Reactic.</div>
-    </div>
-
-
-
-
-</section>
+    {{ include("home/section4.html.twig") }}
 
 <!-- fin de section 4 -->
 
 <!-- section 5 -->
-<section class="min-h-screen ">
-    <div class="flex flex-col min-h-screen justify-around pl-12 pr-12">
-        <div class="flex justify-between flex-wrap items-center text-white">
-            <div>{{ source('logoReactic.svg') }}</div>
-            <div class="">
-                <a href="/" class="text-primary bg-teal-900 hover:bg-primary hover:text-teal-900 border-2 border-teal-400 p-2.5 rounded-3xl">Contactez-nous</a>
-            </div>
-        </div>
-
-        <div class="text-white flex justify-around w-full flex-wrap">
-            <div class="max-w-xs">
-                <p class="text-teal-900 text-2xl font-poppins">Retrouvez-nous</p>
-                <div class="w-72 bg-teal-400 h-0.5 my-5"></div>
-                <p class="text-white text-2xl font-normal">The Babel Community
-                    70 Rue de la République,
-                    13002 Marseille - France
-                    (Entre la Joliette & le Vieux-Port)</p>
-            </div>
-            <div class="max-w-xs">
-                <p class="text-teal-900 text-2xl font-poppins">Liens utiles</p>
-                <div class="w-72 bg-teal-400 h-0.5 my-5"></div>
-                <ul class="text-white text-2xl font-normal ">
-                    <li ><a href="/">Accueil</a></li>
-                    <li><a href="/">Sites internet</a></li>
-                    <li><a href="/">Méthodologie</a></li>
-                    <li><a href="/">Contact</a></li>
-                    <li><a href="/">Mentions légales</a></li>
-                    <li><a href="/">Archives</a></li>
-                    <li><a href="/">Plan du site</a></li>
-                </ul>
-            </div>
-            <div class="max-w-xs
-                        md:-translate-x-48
-                        sm:-translate-x-10
-                        xs:translate-x-2
-                        2xs:translate-x-12
-                        ">
-                <p class="text-teal-900 text-2xl font-poppins">Conseils offerts</p>
-                <div class="w-72 bg-teal-400 h-0.5 my-5"></div>
-                <p class="text-white text-2xl font-normal">Recevez gratuitement des conseil
-                    s dans le digital en nous suivant
-                    sur LinkedIn ou sur Facebook.</p>
-                <div class="flex gap-5 my-5">
-                    <div>{{ source('pictures/icone-linkedin.svg') }}</div>
-                    <div>{{ source('pictures/fb.svg') }}</div>
-                </div>
-            </div>
-        </div>
-        <div class="text-white  text-2xl text-center">© 2020-2021 Reactic. Tous droits réservés.</div>
-    </div>
-
-</section>
+    {{ include("home/footer.html.twig") }}
 
 <!-- fin de section 5 -->
 {% endblock %}
